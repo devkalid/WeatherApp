@@ -13,7 +13,7 @@ class _OptionsState extends State<Options> {
   // String countryValue = "Country";
 
   /// Variables to store country state city data in onChanged method.
-  String countryValue = "Country";
+  String countryValue = "damietta";
   String stateValue = "";
   String cityValue = "";
   String address = "";
@@ -61,6 +61,9 @@ class _OptionsState extends State<Options> {
       //       },
       //     ),
       // )
+      
+
+      //TODO: Try Using searchfield Package
 
       body: Center(
         child: Container(
@@ -102,13 +105,14 @@ class _OptionsState extends State<Options> {
                 cityDropdownLabel: cityValue,
 
                 ///Default Country
-                //defaultCountry: CscCountry.India,
+                // defaultCountry: CscCountry.India,
 
                 ///Disable country dropdown (Note: use it with default country)
-                //disableCountry: true,
+                // disableCountry: false,
+                
 
                 ///Country Filter [OPTIONAL PARAMETER]
-                // countryFilter: [CscCountry.India,CscCountry.United_States,CscCountry.Canada],
+                // countryFilter: [CscCountry.India,CscCountry.United_States,CscCountry.Canada,CscCountry.Egypt],
 
                 ///selected item style [OPTIONAL PARAMETER]
                 selectedItemStyle: TextStyle(
@@ -159,6 +163,9 @@ class _OptionsState extends State<Options> {
                 },
               ),
 
+
+
+
               // /print newly selected country state and city in Text Widget
               // TextButton(
               //     onPressed: () {
@@ -169,6 +176,11 @@ class _OptionsState extends State<Options> {
               //     child: Text("Print Data")),
               // Text(address),
 
+
+
+
+
+              SizedBox(height: 50,),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,

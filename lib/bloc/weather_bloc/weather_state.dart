@@ -7,8 +7,11 @@ final class WeatherInitial extends WeatherState {}
 
 final class WeatherLoading extends WeatherState {}
 final class Weatherfail extends WeatherState {}
+
 final class Weathersuccess extends WeatherState {
   final Weather weather;
 
   Weathersuccess(this.weather);
 }
+
+
